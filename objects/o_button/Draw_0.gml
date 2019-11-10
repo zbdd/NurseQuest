@@ -1,6 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-var text = "Testing this little button"
 var border = 6
 if hoverover
 	draw_set_color(c_blue)

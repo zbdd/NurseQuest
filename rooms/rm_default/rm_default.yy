@@ -24,7 +24,7 @@
     "layers": [
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "Messages",
+            "name": "Buttons",
             "id": "236a191d-075a-4bc1-bc07-21efe6e3935e",
             "depth": 0,
             "grid_x": 32,

@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "1e58e13e-dd5c-4861-b897-7426d74e4a01",
+            "Value": {
+                "id": "b4a85c2e-4216-45b1-a913-e1dda03f6760",
+                "resourcePath": "objects\/o_log\/o_log.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "21b2fcc3-920d-46e1-8cfb-0f49c1e7413f",
             "Value": {
                 "id": "e8c33971-01d8-448e-9036-eac9b32174ce",
@@ -159,6 +167,14 @@
             }
         },
         {
+            "Key": "a89e54ff-77b2-4375-9977-2b94c62d07b4",
+            "Value": {
+                "id": "1f7ccb75-c529-405a-9b25-80452da7e386",
+                "resourcePath": "sprites\/sp_bt_close\/sp_bt_close.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
             "Value": {
                 "id": "542622de-8f47-4259-a53d-2043937a3aeb",
@@ -180,6 +196,14 @@
                 "id": "30cbd376-1e69-4e05-b78f-c37cb7bcf76f",
                 "resourcePath": "views\/be8a3625-36f9-44e0-bccf-014d0c810e7b.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c6625676-d5da-45e2-9da1-990a376a7067",
+            "Value": {
+                "id": "802f9479-ed43-4f41-b1af-afa94ccd6216",
+                "resourcePath": "scripts\/btn_create\/btn_create.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -247,6 +271,14 @@
             }
         },
         {
+            "Key": "f6d9be1e-5fd7-4858-b7bc-dc5d82445bdb",
+            "Value": {
+                "id": "0ca61d37-3221-433a-a270-1ed8957d0f9c",
+                "resourcePath": "objects\/o_game\/o_game.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "f86f04be-c32f-488f-b098-8c79dfdf396a",
             "Value": {
                 "id": "d1db070c-99fb-4c59-8e57-e82f3cd6eecd",
@@ -256,7 +288,7 @@
         }
     ],
     "script_order": [
-        
+        "c6625676-d5da-45e2-9da1-990a376a7067"
     ],
     "tutorial": ""
 }
