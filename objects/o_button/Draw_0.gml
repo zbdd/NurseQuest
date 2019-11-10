@@ -1,10 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
 var border = 6
+
+image_blend = c_white
 if hoverover
-	draw_set_color(c_blue)
-else
-	draw_set_color(c_black)
-draw_rectangle(x-border,y-border,x+string_width(text)+border,y+string_height(text)+border,false)
+	image_blend = c_blue
+draw_self()
+
+
+//draw_rectangle(x-border,y-border,x+string_width(text)+border,y+string_height(text)+border,false)
+
 draw_set_color(c_white)
 draw_text(x,y,text)
