@@ -4,3 +4,4 @@ state = "ACTIVE"
 next_state = "ACTIVE"
 children = ds_list_create()
 has_state_changed = false
+data = noone
