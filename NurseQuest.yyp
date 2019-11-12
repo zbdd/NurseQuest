@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "20b3ec23-a0ef-4326-9360-daf99dfea7cf",
+            "Value": {
+                "id": "2176c528-1c98-4383-815d-a84feac47d4f",
+                "resourcePath": "scripts\/container_update_state\/container_update_state.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "21b2fcc3-920d-46e1-8cfb-0f49c1e7413f",
             "Value": {
                 "id": "e8c33971-01d8-448e-9036-eac9b32174ce",
@@ -60,6 +68,14 @@
                 "id": "5060e9bc-02ec-4c6b-9e68-f934c6815880",
                 "resourcePath": "fonts\/f_default\/f_default.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "2ee7e89a-ba5a-414b-9b63-80a902f8a2e2",
+            "Value": {
+                "id": "679f60d5-dc97-449d-a087-a74cdd76282d",
+                "resourcePath": "scripts\/container_check_has_state_changed\/container_check_has_state_changed.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -99,14 +115,6 @@
             "Value": {
                 "id": "f6f6717c-39eb-48ea-b178-fde895d0f4f0",
                 "resourcePath": "objects\/o_person\/o_person.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "59fa9064-2ed4-4683-99cb-0270ad27b5c7",
-            "Value": {
-                "id": "d396cb7a-fbc5-4571-8a84-9486d5b286de",
-                "resourcePath": "objects\/o_mouse\/o_mouse.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -255,6 +263,14 @@
             }
         },
         {
+            "Key": "da42299d-02c0-4657-9520-737cd4a58762",
+            "Value": {
+                "id": "5386e6fc-a24c-493f-8b8f-447dc134e9f0",
+                "resourcePath": "objects\/o_container\/o_container.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e797bc18-bb6b-416c-89d2-a1f4af1b03b0",
             "Value": {
                 "id": "ab1292d9-3d2f-4c0d-8c71-93895239612a",
@@ -307,7 +323,9 @@
         "c6625676-d5da-45e2-9da1-990a376a7067",
         "6513875f-534e-4729-9532-7f10b7004f9a",
         "4b39be62-3a5f-49d4-a8f7-dc46d4a28b8a",
-        "749f4ff8-3605-4a69-8da0-e4015ea14d53"
+        "749f4ff8-3605-4a69-8da0-e4015ea14d53",
+        "2ee7e89a-ba5a-414b-9b63-80a902f8a2e2",
+        "20b3ec23-a0ef-4326-9360-daf99dfea7cf"
     ],
     "tutorial": ""
 }

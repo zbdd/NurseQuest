@@ -8,7 +8,7 @@ text = "Testing this little button"
 children = ds_list_create()
 state = "ACTIVE"
 next_state = "ACTIVE"
-hasStateChanged = false
+has_state_changed = false
 
 border = 6
 border_y = 2

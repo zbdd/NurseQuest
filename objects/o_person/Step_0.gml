@@ -5,25 +5,14 @@ if !active exit
 
 var btn_lt_pressed = mouse_check_button_pressed(mb_left)
 var ob_hover = instance_position(mouse_x, mouse_y, self)
-hoverover = false
+hover_over = false
 
-if ds_list_size(children) > 0 {
-	for (var i=0; i<ds_list_size(children); i++) {
-		var child = children[| i]
-		if !instance_exists(child) { ds_list_delete(children,i); i=0 }
-		
-		switch (child.object_index) {
-			case o_button:
-				if child.hasStateChanged menu_next_state = child.state
-				else child.next_state = menu_next_state
-			break;
-		}
-	}
-}
+new_state = container_check_has_state_changed(children)
+if is_string(new_state) container_update_state(children, new_state)
 
 if ds_list_size(children) <= 0 {
 	if ob_hover == self {
-		hoverover = true
+		hover_over = true
 		if alarm[0] == -1 alarm[0] = tick
 		if step == 9 step = 0
 	}
@@ -43,4 +32,4 @@ if ds_list_size(children) <= 0 {
 	}
 }
 
-if !hoverover alarm[0] = -1
+if !hover_over alarm[0] = -1

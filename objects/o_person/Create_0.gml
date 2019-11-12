@@ -3,7 +3,7 @@
 step = 0
 tick = room_speed * 0.1
 active = false
-hoverover = false
+hover_over = false
 children = ds_list_create()
 user_detail = ds_map_create()
 active = false
