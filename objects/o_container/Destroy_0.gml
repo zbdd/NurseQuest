@@ -2,5 +2,5 @@
 // You can write your code in this editor
 log_create(id, "deleting")
 
-container_check_children(children,true)
+container_update_state(children,"MENU_CLOSED")
 ds_list_destroy(children)

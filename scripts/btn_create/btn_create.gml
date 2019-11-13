@@ -6,7 +6,7 @@ var create_close = false
 var btn = noone
 
 btn = instance_create_depth(btn_x,btn_y,layer_get_id("Buttons"),o_button)
-
+ds_list_add(container.children, btn)
 // click itself to close
 if !create_close btn.close = btn
 

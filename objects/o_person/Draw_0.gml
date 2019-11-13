@@ -3,7 +3,7 @@
 draw_self()
 var offset = 3
 
-if menu_state == "WAITING" {
+if menu_state == "LISTENING" {
 	if hover_over {
 		draw_set_color(c_blue)
 		draw_circle(mouse_x+offset, mouse_y-offset, 8, false)

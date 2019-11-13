@@ -5,7 +5,7 @@ ob_hover = instance_position(mouse_x, mouse_y, self)
 hover_over = false
 
 
-if menu_state == "WAITING" {
+if menu_state == "LISTENING" {
 	if ds_list_size(children) <= 0 {
 		if ob_hover == self {
 			hover_over = true
@@ -30,4 +30,5 @@ if menu_state == "ON_CLICK" {
 	
 	menu_next_state = "WAITING"
 }
+if menu_state == "WAITING" and ds_list_size(container.children) == 0 menu_next_state = "LISTENING"
 if !hover_over alarm[0] = -1
