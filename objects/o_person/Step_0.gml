@@ -1,20 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
-
-if !active exit
-
-var btn_lt_pressed = mouse_check_button_pressed(mb_left)
-var ob_hover = instance_position(mouse_x, mouse_y, self)
+btn_lt_pressed = mouse_check_button_pressed(mb_left)
+ob_hover = instance_position(mouse_x, mouse_y, self)
 hover_over = false
 
-if menu_state == "ACTIVE" {
-	new_state = container_check_has_state_changed(children)
-	if is_string(new_state) container_update_state(children, new_state)
-	
-	if ds_list_size(children) == 0 menu_next_state = "INACTIVE"
-}
 
-if menu_state == "INACTIVE" {
+if menu_state == "WAITING" {
 	if ds_list_size(children) <= 0 {
 		if ob_hover == self {
 			hover_over = true
@@ -23,18 +14,20 @@ if menu_state == "INACTIVE" {
 		}
 
 		if btn_lt_pressed and ob_hover == self {
-			var button = btn_create(x,y,false)
-			button.text = "Check patient tag"
-			//button.data = user_detail
-			ds_list_add(children,button)
-		
-			button = btn_create(x,y+32,false)
-			button.text = "Test"
-			ds_list_add(children,button)
-		
-			menu_next_state = "ACTIVE"
+			menu_next_state = "ON_CLICK"
 		}
 	}
 }
+if menu_state == "ON_CLICK" {
+	container = instance_create_depth(x,y,depth-1,o_container)
+	check = btn_create(x,y,container)
+	test = btn_create(x,y,container)
 
+	check.text = "Check patient details"
+	check.data = user_detail
+
+	test.text = "Test button"
+	
+	menu_next_state = "WAITING"
+}
 if !hover_over alarm[0] = -1
