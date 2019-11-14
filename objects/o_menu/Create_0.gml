@@ -1,8 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
-state = "ACTIVE"
-next_state = "ACTIVE"
+
+// Inherit the parent event
+event_inherited();
 children = ds_list_create()
-has_state_changed = false
-data = noone
-btn_lt_pressed = false
+offset_x = 16
+offset_y = 24

@@ -16,6 +16,7 @@ if ds_list_size(children) > 0 {
 }
 
 if force_delete_all {
+	log_create(id, "force_delete_all")
 	for (var i=0; i<ds_list_size(children); i++) {
 		var child = children[| i]
 		if instance_exists(child) with child instance_destroy()

@@ -2,15 +2,20 @@
 // You can write your code in this editor
 
 // Inherit the parent event
-event_inherited()
+event_inherited();
 
-if state == "ACTIVE" {
-	btn_lt_pressed = mouse_check_button_pressed(mb_left)
-	hover_over = point_in_rectangle(mouse_x,mouse_y,x-border,y-border_y,x+string_width(text)+border,y+string_height(text)+border_y)
+if state == "active" {
+	var btn_lt_pressed = mouse_check_button_pressed(mb_left)
+	if sprite_index == -1 hover_over = point_in_rectangle(mouse_x,mouse_y,x,y,x+string_width(text),y+string_height(text))
+	else  {
+		hover_over = position_meeting(mouse_x,mouse_y,self)
 
-	if btn_lt_pressed and hover_over {
-		if data == noone instance_destroy()
-		
-		next_state = "ON_CLICK"
+		if hover_over {
+			hover_over = true
+			if alarm[0] == -1 alarm[0] = tick
+			if step == 9 step = 0
+		}
 	}
+
+	if btn_lt_pressed and hover_over next_state = "on_click"
 }
