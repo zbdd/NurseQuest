@@ -18,4 +18,9 @@ if state == "active" {
 	}
 
 	if btn_lt_pressed and hover_over next_state = "on_click"
+	
+	
+	if next_state == "on_click" {
+		log_create(self,string(name+" pressed"))
+	}
 }

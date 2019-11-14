@@ -2,10 +2,8 @@
 // You can write your code in this editor
 with btn {
 	if state == "on_click" {
-		log_create(self,string(name+" pressed"))
-		has_been_clicked = true
 		other.menu.next_state = "spawn_buttons"
-		next_state = "inactive"
+		next_state = "post_click"
 	}
 }
 with (menu) {
