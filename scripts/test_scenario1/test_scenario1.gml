@@ -1,5 +1,5 @@
-instance_create_depth(544,288,depth,o_test)
-
+//instance_create_depth(544,288,depth,o_test)
+instance_create_depth(544,288,depth,o_test_commands)
 //person_test = instance_create_depth(544,288,depth-1,o_person)
 
 /*with person_test {

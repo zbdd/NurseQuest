@@ -11,6 +11,8 @@ if state == "active" {
 		draw_set_colour(c_white)
 		draw_text(x,y,text)	
 	} else {
+		draw_self()
+		
 		if hover_over {
 			draw_set_color(c_blue)
 			draw_circle(mouse_x+offset, mouse_y-offset, 8, false)

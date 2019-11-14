@@ -22,5 +22,6 @@ if state == "active" {
 	
 	if next_state == "on_click" {
 		log_create(self,string(name+" pressed"))
+		announce(name+"::pressed")
 	}
 }
