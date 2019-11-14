@@ -26,5 +26,21 @@ if state == "active" {
 				child.next_state = change_state_to
 		}	
 	}
+	
+	for(var i=0;i<ds_list_size(children);i++) {
+		var child = children[| i]
+		if instance_exists(child) {
+			if child.object_index == o_button {
+				with child {
+					if state == "on_click" {
+						has_been_clicked = true
+						log_create(self,string(name+" pressed"))
+						next_state = "inactive"
+					}
+				}
+			}
+		}
+	}	
+	
 }
 

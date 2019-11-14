@@ -3,6 +3,7 @@
 
 // Inherit the parent event
 event_inherited();
+name = "button:default"
 step = 0
 tick = room_speed * 0.1
 text = "default"
