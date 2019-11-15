@@ -1,0 +1,1 @@
+announce("rm_default::loaded")

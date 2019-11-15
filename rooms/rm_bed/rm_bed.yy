@@ -2,7 +2,7 @@
 {
     "name": "rm_bed",
     "id": "ebde2cbf-6d7b-40cc-8960-a86d5994ff9f",
-    "creationCodeFile": "",
+    "creationCodeFile": "RoomCreationCode.gml",
     "inheritCode": false,
     "inheritCreationOrder": false,
     "inheritLayers": false,
@@ -43,7 +43,7 @@
             "id": "15ef818b-ee89-42e5-afb1-7a05dd3d6ce0",
             "animationFPS": 15,
             "animationSpeedType": "0",
-            "colour": { "Value": 4278190080 },
+            "colour": { "Value": 4280558665 },
             "depth": 100,
             "grid_x": 32,
             "grid_y": 32,

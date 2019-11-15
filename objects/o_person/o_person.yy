@@ -2,7 +2,7 @@
     "id": "1ee9b367-c6bf-4f9e-8c95-4245f0654c34",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_new_person",
+    "name": "o_person",
     "eventList": [
         {
             "id": "ac862a33-1192-4eae-afb1-20a619038b8c",
@@ -18,7 +18,7 @@
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
     "parentObjectId": "00000000-0000-0000-0000-000000000000",
-    "persistent": false,
+    "persistent": true,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
     "physicsFriction": 0.2,
@@ -33,6 +33,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "12a9d715-a455-4ba0-836e-1b9224b8754a",
+    "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
 }

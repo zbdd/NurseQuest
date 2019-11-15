@@ -10,6 +10,10 @@ for (var i = 0; i < 6; i++) {
 }
 draw_set_color(c_black)
 draw_text(x, 547, "Announce");
+var object = global.object
+var str = noone
+if instance_exists(object) if variable_instance_exists(object,"name") str = object.name else str = object_get_name(object.object_index)
+draw_text(x+200, 547, "Object " + string(str));
 list_size = ds_list_size(global.command_log)
 for (var i = 0; i < 6; i++) {
 	if list_size - i <= 0 break;

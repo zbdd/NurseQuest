@@ -5,6 +5,5 @@ y = 288
 offset_x = 1
 offset_y = 24
 bed_test = instance_create_depth(544,288,depth,o_bed)
-person_test = instance_create_depth(544,288,depth-1,o_new_person)
+person_test = instance_create_depth(544,288,depth-1,o_person)
 person_test.btn = noone
-menu = ds_list_create()
