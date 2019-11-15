@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+name = "anna"
 user_details = ds_map_create()
 ds_map_add(user_details,"name","Janet")
 ds_map_add(user_details,"dob","06/11/1987")

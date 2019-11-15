@@ -3,3 +3,4 @@
 state = "inactive"
 next_state = "active"
 has_state_changed = false
+name = ""

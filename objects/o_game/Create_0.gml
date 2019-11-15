@@ -8,7 +8,6 @@ global.user_details_format[2] = "mid"
 
 
 global.commands = ds_list_create()
-
-
+global.command_log = ds_list_create()
 
 test_scenario1()

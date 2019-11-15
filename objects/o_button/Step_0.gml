@@ -25,3 +25,5 @@ if state == "active" {
 		announce(name+"::pressed")
 	}
 }
+if state == "on_click" next_state = "destroy_self"
+if state == "destroy_self" instance_destroy()
