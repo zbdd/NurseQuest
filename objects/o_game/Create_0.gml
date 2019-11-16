@@ -13,4 +13,6 @@ global.menu = ds_list_create()
 
 global.object = noone
 
+global.mouse = instance_create_depth(mouse_x,mouse_y,depth,o_mouse)
+
 test_scenario1()

@@ -3,22 +3,25 @@
 
 // Inherit the parent event
 event_inherited();
-
 if state == "active" {
-	var btn_lt_pressed = mouse_check_button_pressed(mb_left)
-	if sprite_index == -1 hover_over = point_in_rectangle(mouse_x,mouse_y,x,y,x+string_width(text),y+string_height(text))
-	else  {
-		hover_over = position_meeting(mouse_x,mouse_y,self)
-
-		if hover_over {
-			hover_over = true
-			if alarm[0] == -1 alarm[0] = tick
-			if step == 9 step = 0
-		}
+	if !has_mask_updated {
+		if text != "" {
+		var image_w = string_width(text)
+		var image_h = string_height(text)
+		
+		image_xscale = image_w/sprite_width
+		image_yscale = image_h/sprite_height
 	}
-
+	has_mask_updated = true
+	}
+	
 	if btn_lt_pressed and hover_over next_state = "on_click"
 	
+	if hover_over {
+		hover_over = true
+		if alarm[0] == -1 alarm[0] = tick
+		if step == max_step step = 0
+	}
 	
 	if next_state == "on_click" {
 		log_create(self,string(name+" pressed"))
@@ -27,3 +30,6 @@ if state == "active" {
 }
 if state == "on_click" next_state = "destroy_self"
 if state == "destroy_self" instance_destroy()
+
+hover_over = false
+btn_lt_pressed = false

@@ -1,3 +1,5 @@
+/// @param instance
+/// @param {string} action
 if argument_count != 2 exit
 
 var str = ""

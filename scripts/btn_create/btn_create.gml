@@ -1,3 +1,8 @@
+/*
+	@param x
+	@param y
+	@param menu
+*/
 var btn_x = argument[0]
 var btn_y = argument[1]
 var container = argument[2] 

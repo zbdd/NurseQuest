@@ -48,6 +48,19 @@ for (var i=0;i<ds_list_size(commands);i++) {
 		
 		case "approach::pressed":
 			room_goto(rm_bed)
+			announce("rm_bed::open")
+		break
+		
+		case "rm_bed::open":
+			var h_h = room_height/2
+			var h_w = room_width/2
+			body = instance_create_depth(h_w,h_h,depth-9,o_bodypart)
+			body.name = "body"
+			body.sprite_index = sp_body
+			body = instance_create_depth(h_w,h_h-body.sprite_height/2,depth-10,o_bodypart)
+			body.name = "head"
+			body.sprite_index = sp_head
+			log_create(body,"create")
 		break
 	}
 }
