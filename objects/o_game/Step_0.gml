@@ -45,6 +45,6 @@ if com != noone
 
 for (var i=0;i<ds_list_size(menu);i++) {
 	var item = menu[| i]
-	item.y = menu_y + 20 * i
+	item.y = menu_y + 30 * i
 	
 }

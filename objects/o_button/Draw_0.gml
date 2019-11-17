@@ -2,7 +2,7 @@
 // You can write your code in this editor
 offset = 16
 
-if state == "active" {
+if state != "inactive" {
 	{
 		draw_self()
 
@@ -22,7 +22,7 @@ if state == "active" {
 				draw_set_color(c_white)	
 			}
 				
-			draw_text(text_x,text_y,text)	
+			draw_text(x,y,text)	
 		}
 	}
 }

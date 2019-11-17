@@ -6,4 +6,6 @@ max_step = 255
 step_increment = 15
 tick = 1
 wait_on_click = true
+has_border = false
 has_mask_updated = true // stops image resizing for masking reasons
+interactive = true

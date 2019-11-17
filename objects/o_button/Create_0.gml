@@ -13,6 +13,3 @@ has_mask_updated = false
 hover_over = false
 btn_lt_pressed = false
 is_assessable = false
-text_x = x
-text_y = y
-sprite_offset = 0
