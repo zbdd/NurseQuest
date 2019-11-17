@@ -2,7 +2,6 @@
 // You can write your code in this editor
 global.log = ds_list_create()
 com = noone
-
 menu_x = 544
 menu_y = 288
 

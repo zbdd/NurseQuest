@@ -24,21 +24,20 @@ if com == "rm_bed::open" {
 	log_create(body,"create")
 }
 if com == "arm_band::pressed" {
-	if instance_exists(global.object) {
+	/*if instance_exists(global.object) {
 		menu_x = global.object.x
 		menu_y = global.object.y
-	}
+	}*/
 	var details = convert_map_to_string(global.person.user_details,global.user_details_format)
-	btn = button_zoomed_create(h_w+body.sprite_width/2,h_h-body.sprite_height/2,"user_details",details,false)
-	btn.sprite_index = sp_red_band_large
+	btn = button_create(menu_x,menu_y,"user_details",details,false)
+	ds_list_add(menu,btn)
 }
 if com == "lt_arm::pressed" {
-		//btn = button_zoomed_create(menu_x,menu_y,"arm_large","",false)
-		body = instance_create_depth(h_w-body.sprite_width/3,h_h,layer_get_depth(layer_get_id("Focused")),o_bodypart)
-		body.has_border = true
-		body.interactive = false
-		body.sprite_index = sp_arm_large
+		arm_menu_create()
 }
 if com == "user_details::pressed" {
+	announce("anna::open::pressed")
+}
+if com == "close::pressed" {
 	announce("anna::open::pressed")
 }
