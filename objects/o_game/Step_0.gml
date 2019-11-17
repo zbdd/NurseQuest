@@ -61,6 +61,9 @@ if com != noone
 		body = instance_create_depth(h_w,h_h-body.sprite_height/2,depth-10,o_bodypart)
 		body.name = "head"
 		body.sprite_index = sp_head
+		body = instance_create_depth(h_w-body.sprite_width/3,h_h,depth-10,o_bodypart)
+		body.name = "lt_arm"
+		body.sprite_index = sp_arm
 		log_create(body,"create")
 	}
 }

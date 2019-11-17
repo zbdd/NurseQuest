@@ -3,4 +3,6 @@
 event_inherited()
 name = "bodypart"
 max_step = 255
+step_increment = 15
 tick = 1
+has_mask_updated = true // stops image resizing for masking reasons

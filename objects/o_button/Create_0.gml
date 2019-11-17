@@ -5,6 +5,7 @@
 event_inherited();
 name = "button"
 step = 0
+step_increment = 1
 max_step = 10
 tick = room_speed * 0.1
 text = "default"
