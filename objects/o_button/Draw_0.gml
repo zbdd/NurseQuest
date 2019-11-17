@@ -12,13 +12,14 @@ if state == "active" {
 	
 			draw_set_color(c_yellow)
 			draw_circle(mouse_x+offset, mouse_y-offset, step, false)
+		} else {
+			if hover_over
+				draw_set_color(c_blue)
+			else draw_set_colour(c_black)	
+			draw_rectangle(x,y,x+string_width(text),y+string_height(text), false)
+
+			draw_set_color(c_white)		
+			draw_text(x,y,text)	
 		}
-		if hover_over 
-			draw_set_color(c_blue)
-		else draw_set_colour(c_black)
-	
-		draw_rectangle(x,y,x+string_width(text),y+string_height(text), false)
-		draw_set_colour(c_white)
-		draw_text(x,y,text)	
 	}
 }

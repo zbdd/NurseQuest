@@ -162,7 +162,7 @@
             "Key": "601f02c1-fba4-4774-8e87-457a23b9ff75",
             "Value": {
                 "id": "bc71fd17-d497-476e-af9b-9fba889faaca",
-                "resourcePath": "sprites\/sp_band\/sp_band.yy",
+                "resourcePath": "sprites\/sp_red_band\/sp_red_band.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -332,6 +332,14 @@
                 "id": "30cbd376-1e69-4e05-b78f-c37cb7bcf76f",
                 "resourcePath": "views\/be8a3625-36f9-44e0-bccf-014d0c810e7b.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c10c0e64-18a8-44bd-95d9-a204e7a2280f",
+            "Value": {
+                "id": "129c11d1-5241-4af9-be6c-8cd4b2bec144",
+                "resourcePath": "sprites\/sp_red_band_large\/sp_red_band_large.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

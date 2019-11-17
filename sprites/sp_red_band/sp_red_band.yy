@@ -2,7 +2,7 @@
     "id": "601f02c1-fba4-4774-8e87-457a23b9ff75",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "sp_band",
+    "name": "sp_red_band",
     "For3D": false,
     "HTile": false,
     "VTile": false,

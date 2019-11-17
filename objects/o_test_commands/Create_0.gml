@@ -16,6 +16,6 @@ person_test = instance_create_depth(544,288,depth-1,o_person)
 person_test.btn = noone
 
 // Tests
-global.person = person_find_name("anna")
-announce("approach::pressed")
-//announce("create::menu")
+//global.person = person_find_name("anna")
+//announce("approach::pressed")
+announce("create::menu")

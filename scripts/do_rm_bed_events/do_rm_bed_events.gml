@@ -19,7 +19,7 @@ if com == "rm_bed::open" {
 	body = instance_create_depth(h_w-body.sprite_width/3,h_h,layer_get_depth(layer_get_id("Instances"))-2,o_bodypart)
 	body.is_assessable = true
 	body.name = "arm_band"
-	body.sprite_index = sp_band
+	body.sprite_index = sp_red_band
 		
 	log_create(body,"create")
 }
@@ -30,6 +30,7 @@ if com == "arm_band::pressed" {
 	}
 	var details = convert_map_to_string(global.person.user_details,global.user_details_format)
 	btn = button_create(h_w+body.sprite_width/2,h_h-body.sprite_height/2,"user_details",details,false)
+	btn.sprite_index = sp_red_band_large
 	ds_list_add(menu,btn)
 }
 if com == "user_details::pressed" {
@@ -38,5 +39,6 @@ if com == "user_details::pressed" {
 if com == "check::pressed" {
 	var details = convert_map_to_string(global.person.user_details,global.user_details_format)
 	btn = button_create(menu_x,menu_y,"user_details",details,false)
+	btn.sprite_index = sp_red_band_large
 	ds_list_add(menu,btn)
 }
