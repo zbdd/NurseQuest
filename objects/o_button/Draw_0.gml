@@ -22,7 +22,7 @@ if state == "active" {
 				draw_set_color(c_white)	
 			}
 				
-			draw_text(x,y,text)	
+			draw_text(text_x,text_y,text)	
 		}
 	}
 }

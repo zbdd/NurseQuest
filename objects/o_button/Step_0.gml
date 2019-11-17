@@ -9,8 +9,8 @@ if state == "active" {
 			var image_w = string_width(text)
 			var image_h = string_height(text)
 		
-			image_xscale = image_w/sprite_width
-			image_yscale = image_h/sprite_height
+			image_xscale = image_w/sprite_width + sprite_offset
+			image_yscale = image_h/sprite_height + sprite_offset
 			has_mask_updated = true
 		}
 	}
