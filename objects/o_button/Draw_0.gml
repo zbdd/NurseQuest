@@ -5,6 +5,7 @@ offset = 16
 if state == "active" {
 	{
 		draw_self()
+		if room == rm_bed draw_set_font(f_close_up)
 		
 		if hover_over and text == "" {
 			draw_set_color(c_blue)
@@ -16,10 +17,14 @@ if state == "active" {
 			if hover_over
 				draw_set_color(c_blue)
 			else draw_set_colour(c_black)	
-			draw_rectangle(x,y,x+string_width(text),y+string_height(text), false)
-
-			draw_set_color(c_white)		
+			
+			if sprite_index == sp_bounding_box { 
+				draw_rectangle(x,y,x+string_width(text),y+string_height(text), false)
+				draw_set_color(c_white)	
+			}
+				
 			draw_text(x,y,text)	
+			draw_set_font(f_default)
 		}
 	}
 }

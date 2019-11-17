@@ -6,13 +6,13 @@ event_inherited();
 if state == "active" {
 	if !has_mask_updated {
 		if text != "" {
-		var image_w = string_width(text)
-		var image_h = string_height(text)
+			var image_w = string_width(text)
+			var image_h = string_height(text)
 		
-		image_xscale = image_w/sprite_width
-		image_yscale = image_h/sprite_height
-	}
-	has_mask_updated = true
+			image_xscale = image_w/sprite_width
+			image_yscale = image_h/sprite_height
+			has_mask_updated = true
+		}
 	}
 	
 	if btn_lt_pressed and hover_over {

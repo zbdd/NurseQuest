@@ -6,6 +6,7 @@ com = noone
 menu_x = 544
 menu_y = 288
 
+draw_set_font(f_default)
 global.assess = ds_list_create()
 global.object = noone
 

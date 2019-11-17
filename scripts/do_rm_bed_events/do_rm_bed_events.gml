@@ -31,8 +31,14 @@ if com == "arm_band::pressed" {
 	var details = convert_map_to_string(global.person.user_details,global.user_details_format)
 	btn = button_create(h_w+body.sprite_width/2,h_h-body.sprite_height/2,"user_details",details,false)
 	btn.sprite_index = sp_red_band_large
+	btn.has_mask_updated = true
 	ds_list_add(menu,btn)
 }
+/*if com == "lt_arm::pressed" {
+		btn = button_create(menu_x,menu_y,"arm_large","asdasd",false)
+		btn.sprite_index = sp_arm_large
+		ds_list_add(menu,btn)
+}*/
 if com == "user_details::pressed" {
 	announce("anna::open::pressed")
 }
