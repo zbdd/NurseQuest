@@ -20,7 +20,7 @@ draw_set_color(c_black)
 draw_text(gui_x, gui_y*10, "Announce");
 
 if instance_exists(object) if variable_instance_exists(object,"name") str = object.name else str = object_get_name(object.object_index)
-draw_text(gui_x*10, gui_y*10, "Object " + string(str));
+draw_text(gui_x*10, gui_y*10, "Person " + string(str));
 
 list_size = ds_list_size(global.command_log)
 for (var i = 0; i < 6; i++) {

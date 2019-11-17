@@ -5,8 +5,7 @@ offset = 16
 if state == "active" {
 	{
 		draw_self()
-		if room == rm_bed draw_set_font(f_close_up)
-		
+
 		if hover_over and text == "" {
 			draw_set_color(c_blue)
 			draw_circle(mouse_x+offset, mouse_y-offset, 8, false)
@@ -26,5 +25,4 @@ if state == "active" {
 			draw_text(x,y,text)	
 		}
 	}
-	draw_set_font(f_default)
 }
