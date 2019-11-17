@@ -24,7 +24,7 @@ if state == "active" {
 			}
 				
 			draw_text(x,y,text)	
-			draw_set_font(f_default)
 		}
 	}
+	draw_set_font(f_default)
 }

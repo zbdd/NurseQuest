@@ -4,16 +4,16 @@ btn = noone
 menu = global.menu
 commands = global.commands
 log = global.command_log
-object = global.person
+object = global.object
 h_h = room_height/2
 h_w = room_width/2
 gui_x = room_width/16
 gui_y = room_height/16
 
-/*if instance_exists(object) {
+if instance_exists(object) {
 	menu_x = object.x
 	menu_y = object.y
-}*/
+}
 
 com = noone
 

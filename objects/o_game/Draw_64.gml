@@ -13,6 +13,9 @@ for (var i = 0; i < 6; i++) {
 	draw_text(gui_x, gui_y+16*(i+1), global.log[| (list_size-i-1)])	
 }
 
+if instance_exists(global.object) 
+	draw_text(gui_x*20, gui_y, "Object selected: " + string(object_get_name(global.object.object_index)))
+
 draw_set_color(c_black)
 draw_text(gui_x, gui_y*10, "Announce");
 

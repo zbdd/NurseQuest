@@ -34,11 +34,11 @@ if com == "arm_band::pressed" {
 	btn.has_mask_updated = true
 	ds_list_add(menu,btn)
 }
-/*if com == "lt_arm::pressed" {
-		btn = button_create(menu_x,menu_y,"arm_large","asdasd",false)
+if com == "lt_arm::pressed" {
+		btn = button_create(menu_x,menu_y,"arm_large","",false)
 		btn.sprite_index = sp_arm_large
 		ds_list_add(menu,btn)
-}*/
+}
 if com == "user_details::pressed" {
 	announce("anna::open::pressed")
 }
