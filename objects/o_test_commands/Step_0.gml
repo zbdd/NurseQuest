@@ -3,7 +3,7 @@
 event_inherited()
 var menu = global.menu
 depth = -1
-if !instance_exists(person_test.btn) {
+if !instance_exists(person_test.btn) and room == rm_default {
 	if com == "create::menu" or com == "close::pressed" {
 		person_test.btn = button_create(menu_x,menu_y,"anna::open","")
 		person_test.btn.sprite_index = sp_person

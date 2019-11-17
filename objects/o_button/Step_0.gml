@@ -15,7 +15,10 @@ if state == "active" {
 	has_mask_updated = true
 	}
 	
-	if btn_lt_pressed and hover_over next_state = "on_click"
+	if btn_lt_pressed and hover_over {
+		next_state = "on_click"
+		global.object = id
+	}
 	
 	if hover_over {
 		hover_over = true
