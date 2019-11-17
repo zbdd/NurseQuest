@@ -4,10 +4,10 @@ var btn = noone
 var menu = global.menu
 var commands = global.commands
 var log = global.command_log
-var com = noone
+com = noone
 
 for (var i=0;i<ds_list_size(commands);i++) {
-	var com = commands[| i]
+	com = commands[| i]
 	ds_list_add(log,com)
 	ds_list_delete(commands,i)
 	
@@ -20,23 +20,26 @@ for (var i=0;i<ds_list_size(commands);i++) {
 	}
 }
 
-if is_string(com) {
+if com != noone
+	if is_string(com) {
 	
 	if com == "anna::open::pressed" {
 		global.object = person_find_name("anna")
+		menu_x = global.object.x
+		menu_y = global.object.y
 		
-		btn = button_create(x,y,"check","Check patient details")
+		btn = button_create(menu_x,menu_y,"check","Check patient details")
 		ds_list_add(menu,btn)
 			
-		btn = button_create(x,y,"approach","Approach bed")
+		btn = button_create(menu_x,menu_y,"approach","Approach bed")
 		ds_list_add(menu,btn)
 			
-		btn = button_create(x,y,"close","Close menu")
+		btn = button_create(menu_x,menu_y,"close","Close menu")
 		ds_list_add(menu,btn)		
 	}
 	if com == "check::pressed" {
 		var details = convert_map_to_string(global.object.user_details,global.user_details_format)
-		btn = button_create(x,y,"user_details",details)
+		btn = button_create(menu_x,menu_y,"user_details",details)
 		ds_list_add(menu,btn)
 	}
 	if com == "close::pressed" {
