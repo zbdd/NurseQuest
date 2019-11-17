@@ -12,3 +12,4 @@ text = "default"
 has_mask_updated = false
 hover_over = false
 btn_lt_pressed = false
+is_assessable = false

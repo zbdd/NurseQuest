@@ -7,6 +7,8 @@ var log = global.command_log
 var object = global.person
 var h_h = room_height/2
 var h_w = room_width/2
+gui_x = room_width/16
+gui_y = room_height/16
 
 /*if instance_exists(object) {
 	menu_x = object.x
@@ -41,18 +43,18 @@ if com != noone
 		if com == "anna::open::pressed" {
 			global.person = person_find_name("anna")
 			
-			btn = button_create(menu_x,menu_y,"check","Check patient details")
+			btn = button_create(menu_x,menu_y,"check","Check patient details",true)
 			ds_list_add(menu,btn)
 			
-			btn = button_create(menu_x,menu_y,"approach","Approach bed")
+			btn = button_create(menu_x,menu_y,"approach","Approach bed",false)
 			ds_list_add(menu,btn)
 			
-			btn = button_create(menu_x,menu_y,"close","Close menu")
+			btn = button_create(menu_x,menu_y,"close","Close menu",false)
 			ds_list_add(menu,btn)		
 		}
 		if com == "check::pressed" {
 			var details = convert_map_to_string(global.person.user_details,global.user_details_format)
-			btn = button_create(menu_x,menu_y,"user_details",details)
+			btn = button_create(menu_x,menu_y,"user_details",details,false)
 			ds_list_add(menu,btn)
 		}
 		if com == "close::pressed" {
@@ -86,6 +88,7 @@ if com != noone
 			body.sprite_index = sp_arm
 		
 			body = instance_create_depth(h_w-body.sprite_width/3,h_h,layer_get_depth(layer_get_id("Instances"))-2,o_bodypart)
+			body.is_assessable = true
 			body.name = "arm_band"
 			body.sprite_index = sp_band
 		
@@ -93,12 +96,11 @@ if com != noone
 		}
 		if com == "arm_band::pressed" {
 			if instance_exists(global.object) {
-				show_debug_message("Objy: " + string(global.object.y))
 				menu_x = global.object.x
-				menu_y = global.object.y //-global.person.sprite_height
+				menu_y = global.object.y
 			}
 			var details = convert_map_to_string(global.person.user_details,global.user_details_format)
-			btn = button_create(h_w+body.sprite_width/2,h_h-body.sprite_height/2,"user_details",details)
+			btn = button_create(h_w+body.sprite_width/2,h_h-body.sprite_height/2,"user_details",details,false)
 			ds_list_add(menu,btn)
 		}
 		if com == "user_details::pressed" {
@@ -106,8 +108,14 @@ if com != noone
 		}
 		if com == "check::pressed" {
 			var details = convert_map_to_string(global.person.user_details,global.user_details_format)
-			btn = button_create(menu_x,menu_y,"user_details",details)
+			btn = button_create(menu_x,menu_y,"user_details",details,false)
 			ds_list_add(menu,btn)
 		}
 	}
+}
+
+for (var i=0;i<ds_list_size(menu);i++) {
+	var item = menu[| i]
+	item.y = menu_y + 20 * i
+	
 }

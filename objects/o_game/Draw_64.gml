@@ -3,10 +3,6 @@
 var object = global.person
 var str = noone
 var list_size = ds_list_size(global.log)
-var menu = global.menu
-
-var gui_x = room_width/16
-var gui_y = room_height/16
 
 draw_set_color(c_black)
 draw_text(gui_x, gui_y, "Log");
@@ -30,8 +26,10 @@ for (var i = 0; i < 6; i++) {
 	draw_text(gui_x, gui_y*10+16*(i+1), global.command_log[| (list_size-i-1)])	
 }
 
-for (var i=0;i<ds_list_size(menu);i++) {
-	var item = menu[| i]
-	item.y = menu_y + 20 * i
+
+draw_text(gui_x*20, gui_y*10, "Assessable steps");
+list_size = ds_list_size(global.assess)
+for (var i = 0; i < list_size; i++) {
 	
+	draw_text(gui_x*20, gui_y*10+16*(i+1), global.assess[| i])	
 }

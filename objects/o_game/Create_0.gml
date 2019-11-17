@@ -6,6 +6,7 @@ com = noone
 menu_x = 544
 menu_y = 288
 
+global.assess = ds_list_create()
 global.object = noone
 
 global.user_details_format[0] = "name"

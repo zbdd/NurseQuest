@@ -167,6 +167,14 @@
             }
         },
         {
+            "Key": "62744aec-ed98-4d74-8d61-efe55d6ece92",
+            "Value": {
+                "id": "c0ae349e-c00d-45a4-a2cf-cde8be55e14c",
+                "resourcePath": "scripts\/assessable_add\/assessable_add.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "6513875f-534e-4729-9532-7f10b7004f9a",
             "Value": {
                 "id": "dc49b3ae-a9ff-4a37-b41a-f9f0fff55abe",
@@ -457,6 +465,7 @@
         "207b5bd9-000c-4bc8-b11d-24a5096021a2",
         "284b066e-4ff3-46da-969f-a467acac5388",
         "0d68e31f-b64b-4ee4-9773-98015f474673",
+        "62744aec-ed98-4d74-8d61-efe55d6ece92",
         "c17eb95d-e7b5-4328-8ce1-418c7ba190d6",
         "3678b76f-3346-438f-84de-a527bd1d6222"
     ],

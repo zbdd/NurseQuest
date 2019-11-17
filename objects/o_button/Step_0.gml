@@ -31,7 +31,10 @@ if state == "active" {
 		announce(name+"::pressed")
 	}
 }
-if state == "on_click" next_state = "destroy_self"
+if state == "on_click" { 
+	next_state = "destroy_self" 
+	if is_assessable assessable_add(name)	
+}
 if state == "destroy_self" instance_destroy()
 
 hover_over = false
