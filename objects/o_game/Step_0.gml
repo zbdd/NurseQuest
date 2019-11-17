@@ -34,16 +34,12 @@ for (var i=0;i<ds_list_size(commands);i++) {
 if com != noone
 	if is_string(com) {
 		
-	/*show_debug_message("B4 Overlay: " + string(global.overlay_open))
-	if string_pos("pressed",com) >= 1 and !global.overlay_open global.overlay_open = true
-	else if string_pos("pressed",com) and !global.overlay_open global.overlay_open = true
-	show_debug_message("Overlay: " + string(global.overlay_open))
-	*/
+	// these events use the local environment
 	if room == rm_default {
-		do_rm_default_events(com)
+		do_rm_default_events()
 	}
 	if room == rm_bed {
-		do_rm_bed_events(com)
+		do_rm_bed_events()
 	}
 }
 

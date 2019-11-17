@@ -1,4 +1,3 @@
-/// @param command
 if com == "rm_bed::open" {
 		
 	body = instance_create_depth(h_w,h_h,layer_get_depth(layer_get_id("Instances"))-1,o_bodypart)
