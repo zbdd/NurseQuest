@@ -1,8 +1,8 @@
 {
-    "id": "70c44095-c18e-4bff-81b0-4337b565b6b0",
+    "id": "be574f6e-4cdb-4772-ad16-1788a5e33922",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "button_zoomed_create",
+    "name": "arm_band_create",
     "IsCompatibility": false,
     "IsDnD": false
 }

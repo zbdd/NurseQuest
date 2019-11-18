@@ -1,3 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
-step += step_increment
+draw_set_color(c_red)
+draw_circle(menu_x,menu_y,10,false)

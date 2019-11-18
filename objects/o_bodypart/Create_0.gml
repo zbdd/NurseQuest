@@ -9,3 +9,7 @@ wait_on_click = true
 has_border = false
 has_mask_updated = true // stops image resizing for masking reasons
 interactive = true
+image_xscale = 2
+image_yscale = 2
+draw_circle_on_hover = false
+draw_colour_change_on_hover = false

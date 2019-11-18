@@ -6,12 +6,8 @@ var list_size = ds_list_size(global.log)
 
 draw_set_color(c_black)
 draw_text(gui_x, gui_y, "Log");
-
-
-	draw_set_color(c_red)
-	draw_circle(menu_x,menu_y,20,false)
 	
-	draw_set_color(c_black)
+draw_set_color(c_black)
 
 for (var i = 0; i < 6; i++) {
 	if list_size - i <= 0 break;

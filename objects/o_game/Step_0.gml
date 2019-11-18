@@ -45,6 +45,7 @@ if com != noone
 
 for (var i=0;i<ds_list_size(menu);i++) {
 	var item = menu[| i]
-	item.y = menu_y + 30 * i
+	item.x = menu_x + draw_x_offset
+	item.y = menu_y + draw_y_offset + menu_y_buffer * i
 	
 }

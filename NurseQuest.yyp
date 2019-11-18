@@ -71,14 +71,6 @@
             }
         },
         {
-            "Key": "1bc2fbd4-ab86-4ba6-a96c-10d3342e2fa9",
-            "Value": {
-                "id": "7fa2ea2e-e5b0-4a1b-ab9c-40e1c6c31ebc",
-                "resourcePath": "objects\/o_button_zoomed\/o_button_zoomed.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "1bceba64-bdcc-48d2-b46b-76559e7adfc5",
             "Value": {
                 "id": "16590ac9-161f-49f5-8dda-0b990164bebe",
@@ -215,14 +207,6 @@
             }
         },
         {
-            "Key": "70c44095-c18e-4bff-81b0-4337b565b6b0",
-            "Value": {
-                "id": "46e073e9-58d4-4c3e-b94d-43b4f38dd069",
-                "resourcePath": "scripts\/button_zoomed_create\/button_zoomed_create.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "834b5078-fb44-4ee4-b80c-8372efe5ba35",
             "Value": {
                 "id": "2efc4c28-43c7-4dce-a0f3-0f08658dc296",
@@ -239,19 +223,19 @@
             }
         },
         {
-            "Key": "88bfec5a-ffd9-417d-99d5-d3b838fc9843",
-            "Value": {
-                "id": "445702ef-b2f3-4c9b-b9a5-b411f9ab335f",
-                "resourcePath": "objects\/o_text_button\/o_text_button.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "8a2272ea-b5f4-47e0-a2a7-870586f098ae",
             "Value": {
                 "id": "4b2d587b-107e-48fa-94b7-1305f6dd2290",
                 "resourcePath": "views\/8a2272ea-b5f4-47e0-a2a7-870586f098ae.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "8adec6ac-2bdd-42bb-a17f-5087e626950f",
+            "Value": {
+                "id": "ed71a6c9-c20b-4c44-8d1f-4df16854aa75",
+                "resourcePath": "scripts\/object_find_name\/object_find_name.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -335,6 +319,14 @@
             }
         },
         {
+            "Key": "be574f6e-4cdb-4772-ad16-1788a5e33922",
+            "Value": {
+                "id": "94b3d29b-a3c1-4489-819c-d2d35004660b",
+                "resourcePath": "scripts\/arm_band_create\/arm_band_create.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "be8a3625-36f9-44e0-bccf-014d0c810e7b",
             "Value": {
                 "id": "30cbd376-1e69-4e05-b78f-c37cb7bcf76f",
@@ -412,6 +404,14 @@
                 "id": "52b210e2-c809-49cd-a02b-506a929112fb",
                 "resourcePath": "sprites\/sp_bounding_box\/sp_bounding_box.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d5b7459c-5ef2-49fb-9d67-24b182f6bc4f",
+            "Value": {
+                "id": "f0fd6e73-a7cf-4160-8552-8cae13a23d2d",
+                "resourcePath": "views\/d5b7459c-5ef2-49fb-9d67-24b182f6bc4f.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -495,11 +495,12 @@
         "0d68e31f-b64b-4ee4-9773-98015f474673",
         "62744aec-ed98-4d74-8d61-efe55d6ece92",
         "c17eb95d-e7b5-4328-8ce1-418c7ba190d6",
-        "70c44095-c18e-4bff-81b0-4337b565b6b0",
-        "3678b76f-3346-438f-84de-a527bd1d6222",
         "65718f7b-bdda-41fe-8780-1f5f239c9643",
         "c9e990ca-5baa-4936-af8b-907fd7c3779c",
-        "06e690ef-de4f-4968-bd58-d6ea3210e368"
+        "3678b76f-3346-438f-84de-a527bd1d6222",
+        "8adec6ac-2bdd-42bb-a17f-5087e626950f",
+        "06e690ef-de4f-4968-bd58-d6ea3210e368",
+        "be574f6e-4cdb-4772-ad16-1788a5e33922"
     ],
     "tutorial": ""
 }

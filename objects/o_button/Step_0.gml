@@ -6,8 +6,8 @@ event_inherited();
 if state == "active" {
 	if !has_mask_updated {
 		if text != "" {
-			var image_w = string_width(text)
-			var image_h = string_height(text)
+			var image_w = string_width(text) + draw_x_offset
+			var image_h = string_height(text) + draw_y_offset
 		
 			image_xscale = image_w/sprite_width
 			image_yscale = image_h/sprite_height

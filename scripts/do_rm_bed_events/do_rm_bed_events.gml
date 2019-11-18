@@ -16,7 +16,7 @@ if com == "rm_bed::open" {
 	body.name = "head"
 	body.sprite_index = sp_head
 		
-	body = instance_create_depth(h_w-body.sprite_width/3,h_h,layer_get_depth(layer_get_id("Body"))-2,o_bodypart)
+	body = instance_create_depth(h_w-body.sprite_width/3,h_h,layer_get_depth(layer_get_id("Body"))-3,o_bodypart)
 	body.is_assessable = true
 	body.name = "arm_band"
 	body.sprite_index = sp_red_band
@@ -24,20 +24,16 @@ if com == "rm_bed::open" {
 	log_create(body,"create")
 }
 if com == "arm_band::pressed" {
-	/*if instance_exists(global.object) {
-		menu_x = global.object.x
-		menu_y = global.object.y
-	}*/
-	var details = convert_map_to_string(global.person.user_details,global.user_details_format)
-	btn = button_create(menu_x,menu_y,"user_details",details,false)
-	ds_list_add(menu,btn)
+	arm_band_create()
 }
 if com == "lt_arm::pressed" {
-		arm_menu_create()
+	arm_menu_create()
 }
 if com == "user_details::pressed" {
 	announce("anna::open::pressed")
 }
-if com == "close::pressed" {
-	announce("anna::open::pressed")
+if com == "lt_arm::close::pressed" {
+	var to_close = object_find_name(o_bodypart,"lt_arm_zoomed")
+	if instance_exists(to_close) with to_close instance_destroy()
+	//announce("anna::open::pressed")
 }
